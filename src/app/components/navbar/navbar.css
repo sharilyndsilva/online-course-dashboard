@@ -1,0 +1,13 @@
+nav {
+  padding: 10px;
+}
+
+a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.active {
+  color: blue;
+}
