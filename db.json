@@ -1,0 +1,258 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Angular Fundamentals",
+      "category": "Web Development",
+      "level": "Beginner",
+      "instructor": "Dr. Arjun Mehta",
+      "duration": "8 weeks",
+      "price": 4999,
+      "rating": 4.8,
+      "studentsEnrolled": 142,
+      "status": "active",
+      "description": "Learn the core concepts of Angular 17 including components, services, routing, and reactive forms. Perfect for developers new to Angular.",
+      "syllabus": [
+        "Week 1: Introduction to Angular & TypeScript",
+        "Week 2: Components and Data Binding",
+        "Week 3: Directives and Pipes",
+        "Week 4: Services and Dependency Injection",
+        "Week 5: Routing and Navigation",
+        "Week 6: Reactive Forms",
+        "Week 7: HTTP Client and Observables",
+        "Week 8: Final Project"
+      ],
+      "createdAt": "2024-01-15",
+      "thumbnail": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400"
+    },
+    {
+      "id": 2,
+      "title": "Advanced React & Redux",
+      "category": "Web Development",
+      "level": "Advanced",
+      "instructor": "Prof. Sneha Iyer",
+      "duration": "10 weeks",
+      "price": 6999,
+      "rating": 4.9,
+      "studentsEnrolled": 98,
+      "status": "active",
+      "description": "Deep dive into React hooks, Redux Toolkit, performance optimization, and testing. For experienced React developers.",
+      "syllabus": [
+        "Week 1: React Hooks Deep Dive",
+        "Week 2: Context API vs Redux",
+        "Week 3: Redux Toolkit",
+        "Week 4: Async with Redux Thunk",
+        "Week 5: React Query",
+        "Week 6: Performance Optimization",
+        "Week 7: Testing with Jest & RTL",
+        "Week 8: TypeScript with React",
+        "Week 9: Micro Frontends",
+        "Week 10: Capstone Project"
+      ],
+      "createdAt": "2024-02-01",
+      "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400"
+    },
+    {
+      "id": 3,
+      "title": "Python for Data Science",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "instructor": "Dr. Kavita Sharma",
+      "duration": "12 weeks",
+      "price": 7999,
+      "rating": 4.7,
+      "studentsEnrolled": 210,
+      "status": "active",
+      "description": "Comprehensive Python for data analysis, visualization, and machine learning using pandas, NumPy, matplotlib, and scikit-learn.",
+      "syllabus": [
+        "Week 1: Python Refresher",
+        "Week 2: NumPy Arrays",
+        "Week 3: Pandas DataFrames",
+        "Week 4: Data Cleaning",
+        "Week 5: Matplotlib & Seaborn",
+        "Week 6: Statistics for DS",
+        "Week 7: ML Intro with scikit-learn",
+        "Week 8: Regression Models",
+        "Week 9: Classification",
+        "Week 10: Clustering",
+        "Week 11: NLP Basics",
+        "Week 12: Final Project"
+      ],
+      "createdAt": "2024-01-20",
+      "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400"
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Design Mastery",
+      "category": "Design",
+      "level": "Beginner",
+      "instructor": "Ms. Priya Nair",
+      "duration": "6 weeks",
+      "price": 3999,
+      "rating": 4.6,
+      "studentsEnrolled": 175,
+      "status": "active",
+      "description": "Learn UI/UX design principles, Figma, wireframing, prototyping and user research for building great digital products.",
+      "syllabus": [
+        "Week 1: Design Thinking",
+        "Week 2: Wireframing",
+        "Week 3: Figma Fundamentals",
+        "Week 4: Prototyping",
+        "Week 5: User Testing",
+        "Week 6: Portfolio Project"
+      ],
+      "createdAt": "2024-03-01",
+      "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400"
+    },
+    {
+      "id": 5,
+      "title": "Node.js & Express Backend",
+      "category": "Backend",
+      "level": "Intermediate",
+      "instructor": "Mr. Rahul Verma",
+      "duration": "8 weeks",
+      "price": 5499,
+      "rating": 4.5,
+      "studentsEnrolled": 88,
+      "status": "inactive",
+      "description": "Build scalable REST APIs with Node.js and Express. Covers authentication, databases, file uploads and deployment.",
+      "syllabus": [
+        "Week 1: Node.js Core",
+        "Week 2: Express Framework",
+        "Week 3: REST API Design",
+        "Week 4: MongoDB & Mongoose",
+        "Week 5: Authentication & JWT",
+        "Week 6: File Uploads",
+        "Week 7: Testing APIs",
+        "Week 8: Deployment"
+      ],
+      "createdAt": "2024-02-15",
+      "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400"
+    },
+    {
+      "id": 6,
+      "title": "Machine Learning A-Z",
+      "category": "Data Science",
+      "level": "Advanced",
+      "instructor": "Dr. Arjun Mehta",
+      "duration": "14 weeks",
+      "price": 9999,
+      "rating": 4.9,
+      "studentsEnrolled": 132,
+      "status": "active",
+      "description": "Complete machine learning course covering supervised, unsupervised learning, deep learning with TensorFlow and Keras.",
+      "syllabus": [
+        "Week 1-2: Math Foundations",
+        "Week 3-4: Supervised Learning",
+        "Week 5-6: Unsupervised Learning",
+        "Week 7-8: Neural Networks",
+        "Week 9-10: Deep Learning",
+        "Week 11-12: CNNs and RNNs",
+        "Week 13: NLP with Transformers",
+        "Week 14: Capstone"
+      ],
+      "createdAt": "2024-03-10",
+      "thumbnail": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Aarav Patel",
+      "email": "aarav.patel@student.com",
+      "phone": "9876543210",
+      "department": "Computer Science",
+      "enrollmentYear": 2023,
+      "status": "active",
+      "avatar": "AP"
+    },
+    {
+      "id": 2,
+      "name": "Diya Sharma",
+      "email": "diya.sharma@student.com",
+      "phone": "9123456780",
+      "department": "Information Technology",
+      "enrollmentYear": 2023,
+      "status": "active",
+      "avatar": "DS"
+    },
+    {
+      "id": 3,
+      "name": "Karan Mehta",
+      "email": "karan.mehta@student.com",
+      "phone": "9988776655",
+      "department": "Electronics",
+      "enrollmentYear": 2022,
+      "status": "active",
+      "avatar": "KM"
+    },
+    {
+      "id": 4,
+      "name": "Riya Singh",
+      "email": "riya.singh@student.com",
+      "phone": "9765432100",
+      "department": "Computer Science",
+      "enrollmentYear": 2024,
+      "status": "active",
+      "avatar": "RS"
+    },
+    {
+      "id": 5,
+      "name": "Aryan Gupta",
+      "email": "aryan.gupta@student.com",
+      "phone": "9654321098",
+      "department": "Data Science",
+      "enrollmentYear": 2023,
+      "status": "inactive",
+      "avatar": "AG"
+    },
+    {
+      "id": 6,
+      "name": "Ananya Reddy",
+      "email": "ananya.reddy@student.com",
+      "phone": "9543210987",
+      "department": "Information Technology",
+      "enrollmentYear": 2022,
+      "status": "active",
+      "avatar": "AR"
+    },
+    {
+      "id": 7,
+      "name": "Vivek Kumar",
+      "email": "vivek.kumar@student.com",
+      "phone": "9432109876",
+      "department": "Computer Science",
+      "enrollmentYear": 2024,
+      "status": "active",
+      "avatar": "VK"
+    },
+    {
+      "id": 8,
+      "name": "Meera Joshi",
+      "email": "meera.joshi@student.com",
+      "phone": "9321098765",
+      "department": "Design",
+      "enrollmentYear": 2023,
+      "status": "active",
+      "avatar": "MJ"
+    }
+  ],
+  "enrollments": [
+    { "id": 1, "studentId": 1, "courseId": 1, "enrolledDate": "2024-01-20", "progress": 85, "grade": "A", "status": "active" },
+    { "id": 2, "studentId": 1, "courseId": 3, "enrolledDate": "2024-02-01", "progress": 60, "grade": "B+", "status": "active" },
+    { "id": 3, "studentId": 2, "courseId": 1, "enrolledDate": "2024-01-22", "progress": 92, "grade": "A+", "status": "active" },
+    { "id": 4, "studentId": 2, "courseId": 4, "enrolledDate": "2024-03-05", "progress": 45, "grade": "B", "status": "active" },
+    { "id": 5, "studentId": 3, "courseId": 2, "enrolledDate": "2024-02-10", "progress": 70, "grade": "A", "status": "active" },
+    { "id": 6, "studentId": 3, "courseId": 6, "enrolledDate": "2024-03-15", "progress": 30, "grade": "B", "status": "active" },
+    { "id": 7, "studentId": 4, "courseId": 1, "enrolledDate": "2024-04-01", "progress": 20, "grade": "C+", "status": "active" },
+    { "id": 8, "studentId": 5, "courseId": 3, "enrolledDate": "2024-01-25", "progress": 100, "grade": "A+", "status": "completed" },
+    { "id": 9, "studentId": 6, "courseId": 2, "enrolledDate": "2024-02-20", "progress": 55, "grade": "B", "status": "active" },
+    { "id": 10, "studentId": 7, "courseId": 4, "enrolledDate": "2024-03-20", "progress": 80, "grade": "A", "status": "active" },
+    { "id": 11, "studentId": 8, "courseId": 4, "enrolledDate": "2024-03-22", "progress": 65, "grade": "B+", "status": "active" },
+    { "id": 12, "studentId": 6, "courseId": 5, "enrolledDate": "2024-02-25", "progress": 40, "grade": "C", "status": "active" }
+  ],
+  "users": [
+    { "id": 1, "name": "Admin User", "email": "admin@coursedash.com", "role": "admin" },
+    { "id": 2, "name": "Dr. Arjun Mehta", "email": "arjun@coursedash.com", "role": "instructor" }
+  ]
+}

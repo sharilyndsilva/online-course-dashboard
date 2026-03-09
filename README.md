@@ -1,127 +1,74 @@
-# OnlineCourseDashboard
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-# online course management dashboard
-
-this project is an online course management dashboard developed using angular.  
-it allows administrators and instructors to manage courses, students, and enrollments through an interactive and user-friendly interface.
-
-the project focuses on understanding core angular concepts such as components, routing, services, reactive forms, and angular material for building modern and dynamic web applications.
+# 📚 CourseHub — Online Course Management Dashboard
+### Angular 17 Semester Project
 
 ---
 
-## 🎯 objective
+## 🚀 Quick Start
 
-to develop an interactive online course management dashboard that:
-- manages courses and course details
-- displays registered students
-- allows student enrollment into courses
-- shows dashboard analytics and summaries
+### Step 1 — Install dependencies (one time only)
+```
+npm install
+```
 
----
+### Step 2 — Start JSON Server (Terminal 1)
+```
+npm run server
+```
 
-## 🛠️ tools and technologies used
+### Step 3 — Start Angular app (Terminal 2)
+```
+npm start
+```
 
-- framework: angular (v17 or latest)
-- language: typescript
-- ui library: angular material
-- backend: json server / mock rest api
-- development tools: node.js, angular cli, vs code
+Open: **http://localhost:4200**
 
----
-
-## 📂 project features
-
-- reusable angular components
-- routing for smooth navigation
-- service-based architecture for data handling
-- reactive forms for enrollment
-- material ui for responsive design
-- mock backend for api simulation
+> **Windows shortcut**: Double-click `START.bat` after running `npm install`
 
 ---
 
-## 🧩 components implemented
+## 📁 Project Structure
 
-- **course-list** – displays all available courses  
-- **course-detail** – shows detailed course information and syllabus  
-- **student-list** – displays registered students  
-- **enrollment** – allows students to enroll in courses  
-- **dashboard** – shows overall analytics and summaries  
+```
+src/app/
+├── models/          → Course, Student, Enrollment, User interfaces
+├── services/        → CourseService, StudentService, EnrollmentService, AuthService
+├── guards/          → AuthGuard (route protection)
+├── interceptors/    → HttpErrorInterceptor (global error handling)
+├── pipes/           → filterCourse (filter by category/level)
+├── directives/      → highlightNew (highlights new/top-rated courses)
+├── material/        → Angular Material module
+└── components/
+    ├── dashboard/   → Analytics dashboard with stats cards
+    ├── course-list/ → Course CRUD + dialog forms
+    ├── course-detail→ Full syllabus + enrolled students table
+    ├── student-list → Student CRUD + Material table
+    └── enrollment/  → Reactive form enrollment + enrollments table
+```
 
 ---
 
-## 🚀 learning outcomes
+## 🗺️ Routes
 
-- understanding angular architecture
-- working with components and services
-- implementing routing and navigation
-- building reactive forms
-- integrating angular material
-- handling mock backend data
+| URL | Page | Guard |
+|---|---|---|
+| /dashboard | Analytics Dashboard | None |
+| /courses | Course List (CRUD) | AuthGuard |
+| /courses/:id | Course Detail + Syllabus | AuthGuard |
+| /students | Student List (CRUD) | AuthGuard |
+| /enrollments | Enrollment Management | AuthGuard |
 
 ---
 
-## ▶️ how to run the project
+## ✅ Features Implemented
 
-1. install node.js  
-2. install angular cli  
-   ```bash
-   npm install -g @angular/cli
+- Angular 17 with TypeScript interfaces for Course, Student, Enrollment
+- Full CRUD using MatDialog (add, edit, delete) for Courses and Students
+- Reactive Forms with validation for enrollment and student registration
+- JSON Server mock backend with REST API (GET, POST, PUT, DELETE)
+- RxJS forkJoin for parallel HTTP calls
+- AuthGuard protecting instructor/admin routes
+- Custom pipe: filterCourse (by category and level)
+- Custom directive: highlightNew (teal border for new, gold for top-rated)
+- HTTP Error Interceptor with MatSnackBar feedback
+- Angular Material: MatTable, MatCard, MatDialog, MatToolbar, MatSidenav, MatTabs, MatProgressBar
+- Responsive design with sidebar navigation
