@@ -1,0 +1,69 @@
+/* ============================================================
+   CourseHub - Global Styles
+   Clean teal/slate design with Nunito + DM Sans fonts
+   ============================================================ */
+
+:root {
+  --primary: #0f766e;
+  --primary-light: #14b8a6;
+  --primary-dark: #0d5e57;
+  --accent: #f59e0b;
+  --accent-light: #fcd34d;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --bg: #f0fdf9;
+  --surface: #ffffff;
+  --sidebar-bg: #0f2027;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 10px; }
+
+/* Utilities */
+.page-content { padding: 28px 32px; }
+.page-title { font-size: 26px; font-weight: 800; color: var(--text-primary); margin-bottom: 4px; }
+.page-subtitle { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; }
+
+/* Snackbar overrides */
+.success-snackbar { background: var(--success) !important; color: white !important; }
+.error-snackbar { background: var(--danger) !important; color: white !important; }
+
+/* Status chips */
+.chip { display: inline-flex; align-items: center; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.chip-active { background: #dcfce7; color: #166534; }
+.chip-inactive { background: #fee2e2; color: #991b1b; }
+.chip-completed { background: #dbeafe; color: #1e40af; }
+.chip-pending { background: #fef3c7; color: #92400e; }
+
+/* Card hover animation */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15,118,110,0.15) !important;
+}
+
+/* Mat overrides */
+.mat-mdc-card { border-radius: 14px !important; }
+.mat-mdc-raised-button.mat-primary { background: var(--primary) !important; }
