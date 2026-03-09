@@ -1,0 +1,67 @@
+<!-- App Shell with sidenav layout -->
+<mat-sidenav-container class="app-shell">
+
+  <!-- Sidebar Navigation -->
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <!-- Brand Logo -->
+    <div class="brand">
+      <mat-icon class="brand-icon">school</mat-icon>
+      <span class="brand-name">CourseHub</span>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <!-- Nav Links -->
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="nav-active" class="nav-item">
+        <mat-icon matListItemIcon>dashboard</mat-icon>
+        <span matListItemTitle>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/courses" routerLinkActive="nav-active" class="nav-item">
+        <mat-icon matListItemIcon>menu_book</mat-icon>
+        <span matListItemTitle>Courses</span>
+      </a>
+      <a mat-list-item routerLink="/students" routerLinkActive="nav-active" class="nav-item">
+        <mat-icon matListItemIcon>people</mat-icon>
+        <span matListItemTitle>Students</span>
+      </a>
+      <a mat-list-item routerLink="/enrollments" routerLinkActive="nav-active" class="nav-item">
+        <mat-icon matListItemIcon>how_to_reg</mat-icon>
+        <span matListItemTitle>Enrollments</span>
+      </a>
+    </mat-nav-list>
+
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+      <mat-icon>account_circle</mat-icon>
+      <div>
+        <div class="admin-name">Admin User</div>
+        <div class="admin-role">Administrator</div>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <!-- Main Content Area -->
+  <mat-sidenav-content class="main-content">
+    <!-- Top Toolbar -->
+    <mat-toolbar class="top-bar">
+      <button mat-icon-button (click)="sidenav.toggle()" class="menu-btn">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="toolbar-title">Online Course Management Dashboard</span>
+      <span class="spacer"></span>
+      <button mat-icon-button matTooltip="Notifications">
+        <mat-icon [matBadge]="3" matBadgeColor="warn">notifications</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Settings">
+        <mat-icon>settings</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <!-- Router outlet renders active page -->
+    <div class="outlet-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
